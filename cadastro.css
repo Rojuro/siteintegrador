@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/planta-2.jpg);
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6%;
+    opacity: .95;
+}
+
+.form-container{
+    background: #97bcef;
+    width: 600px;
+    height: 750px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #09397c;
+    font-size: 25pt;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    padding: 5px;
+    outline: 0;
+    font-size: 18px;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid #2D5966;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-28px);
+    font-size: 18px;
+    color: #09397c;
+    font-weight: 500;
+}
+
+
+
+
+/* ESTILO DO BUTTON */
+
+.btn-cadastrar, 
+.btn-atualizar,
+.btn-retornar button{
+    margin: 10px 25%;    
+    width: 50%;
+    text-align: center;    
+}
+
+.btn-cadastrar, 
+.btn-atualizar,
+.btn-retornar button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5e6c9c;
+    color: #fff;
+    font-size: 15pt;
+    cursor: pointer;
+    transition: .3s;    
+}
+
+/* -- Btn Retornar :hover -- */
+.btn-cadastrar:hover, 
+.btn-atualizar:hover,
+.btn-retornar button:hover{
+    background-color: #741314;
+}
+/* ----- */

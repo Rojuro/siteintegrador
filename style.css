@@ -1,0 +1,264 @@
+/* CLASSES GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ESTILO DO HTML */
+html{
+    height: 500vh;
+    background-color: #000;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* CLASSES GERAL */
+
+/* GLASS EFFECT LOGO */
+/* .glass i{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 3px 15px 0 #9bbbc3;
+    padding: 2px 8px;
+} */
+
+
+/* ESTILO DO CABEÇALHO >HEADER< */
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transição para ROLAGEM animate */
+    transition: .7s;
+}
+/* Animation >HEADER ROLAGEM< */
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: #9bbbc3;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #9bbbc3;
+}
+
+header.rolagem button{
+    background-color: #9bbbc3;
+}
+
+/* Animation >HEADER ROLAGEM< */
+
+header i{
+    font-size: 40px;
+    color: #fff;
+    opacity: .5;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ESTILO DO BUTTON */
+.bnt-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #5787dd;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESTILO DO BANNER */
+.banner{
+    height: 100vh;
+    background-image: url(img/fach-All-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 2.8em;
+    color: #5787dd;
+}
+
+.banner h1 span{
+    color: #c0bfaa;
+}
+
+/* ESTILO INTERFACES */
+.page1{
+    background-image: url(img/fach-All-2.jpg);
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+.page2{
+    background-image: url(img/fach-2.jpg);
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+.page3{
+    background-image: url(img/fach-1.jpg);
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+.page4{
+    background-image: url(img/fach-5.jpg);
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+.page5{
+    background-image: url(img/intt-5.jpg);
+    height: 100vh;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+}
+.page6{
+    background-image: url(img/intt-7.jpg);
+    max-height: auto;
+    max-width: 100%;       
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;    
+}
+
+
+section{
+    height: 100vh;
+    display: flex;
+    transition: 5s;
+}
+
+/* Animation >HEADER ROLAGEM< */
+/* section.page1.rolagem{
+    transition: 10s;
+}
+
+h2 {
+    font-size: 0px;
+} */
+
+
+.spanglass span{
+    opacity: 0;
+}
+
+/* FOOTER */
+
+/* From Uiverse.io by neerajbaniwal */ 
+.btn-shine {
+    position: absolute;
+    top: 100%;
+    right: 500px;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+}
+
+@-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+}
+
+@keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+}
